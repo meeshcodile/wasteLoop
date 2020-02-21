@@ -4,28 +4,28 @@ const {Schema} = mongoose
 
 const reportSchema = new Schema({
     // registration
-    fullname:{
+    reportFullName:{
         type: String,
         required: true,
     },
-    phoneNo:{
+    reportPhoneNo:{
         type: String,
         required: true,
         unique: true
     },
-    address:{
+    reportAddress:{
         type: String,
         required: true,
     },
-    pickUpday:{
+    reportPickUpDay:{
         type: Date,
         required: true
     },
-    pickUpTime:{
+    reportPickUpTime:{
         type: String,
         required: true
     },
-    details:{
+    reportDetails:{
         type: String,
         unique: true
     },

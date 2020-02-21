@@ -4,8 +4,14 @@ const path = require("path")
 const expresshandlebars = require("express-handlebars")
 const express = require('express')
 const app = express()
-const port = 5000;
+const port = 5200
+const bodyParser = require("body-parser")
 
+// ======setting parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: false
+}))
 
 // ===== Express Handle bars
 app.engine('.hbs', expresshandlebars({

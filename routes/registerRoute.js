@@ -11,6 +11,11 @@ router.route('/register').get((req, res)=>{
     const {fullname, email, phoneNo, address, psw, cpsw} = req.body
     const reg = new User ({fullname, email, phoneNo, address, psw, cpsw})
     console.log(reg)
+    // ==== password validation
+    if (req.body.password === req.body.confirmPassword){
+        console.log(`Saved Successfully, your name is ${req.body.fullname}`)
+        return res.redirect('/report')
+    }
 })
 
 module.exports = router
