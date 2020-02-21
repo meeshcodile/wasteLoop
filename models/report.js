@@ -18,7 +18,7 @@ const reportSchema = new Schema({
         required: true,
     },
     pickUpday:{
-        type: String,
+        type: Date,
         required: true
     },
     pickUpTime:{
