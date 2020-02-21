@@ -16,12 +16,6 @@ router.route('/contact').get((req,res)=>{
 router.route('/login').get((req, res)=>(
     res.render('pages/login')
 ))
-router.route('/register').get((req, res)=>{
-    res.render('pages/register')
-})
-router.route('/report').get((req, res)=>{
-    res.render('pages/report')
-})
 router.route('/users').get((req, res)=>{
     res.render('pages/users')
 })
