@@ -13,12 +13,10 @@ router.route('/adminDash').get((req,res)=>{
 router.route('/contact').get((req,res)=>{
     res.render('pages/contact')
 })
-router.route('/login').get((req, res)=>(
-    res.render('pages/login')
-))
 router.route('/users').get((req, res)=>{
     res.render('pages/users')
 })
+
 
 
 
