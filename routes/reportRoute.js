@@ -54,7 +54,8 @@ router.post('/report/:id',async(req, res)=>{
 
 // ========success get Route===============
 router.get('/success', (req, res)=>{
-    res.render('pages/success')
+    let userReport = req.user
+    res.render('pages/success', {userReport})
 })
 
 module.exports = router
